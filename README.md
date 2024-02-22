@@ -1,4 +1,6 @@
-# TerraInsight | AI based Land Cover Predictor
+# TerraInsight 
+
+Welcome to TerraInsight, your AI-based Land Cover Predictor.
 
 ## Project Requirements
 - Python installed
