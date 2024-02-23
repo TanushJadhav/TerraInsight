@@ -18,3 +18,6 @@ Welcome to TerraInsight, your AI-based Land Cover Predictor.
    ```
 
 3. Open your web browser by clicking the link generate in the terminal.
+
+
+Please Note: The Front-end is till in the works.
