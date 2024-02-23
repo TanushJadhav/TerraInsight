@@ -56,7 +56,7 @@ main {
     margin: 20px;
 }
 
-.form-col1 {
+.form-col1, .form-col2 {
     float: left;
     margin-right: 20px;
 }
