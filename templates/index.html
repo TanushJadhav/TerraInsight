@@ -7,22 +7,26 @@
     <title>TerraInsight</title>
 </head>
 <body>
+
+    <!--  Start Header Section  -->
     <header class="header">
         <a class="logo">TerraInsight</a>
 
         <!-- Navbar -->
-        <nav class="navbar">
+        <!-- <nav class="navbar">
             <ul>
                 <a href="#">Home</a>
                 <a href="#">Predict</a>
                 <a href="#">Contact us</a>
             </ul>
-        </nav>
+        </nav> -->
 
     </header>
+    <!-- Ending Header Section  -->
 
-    <!-- Main Content -->
+    <!-- Starting Main Content Area -->
     <main>
+        <!-- Starting Form  -->
         <form id="predictionForm">
 
             <div class="form-col1">
@@ -95,13 +99,16 @@
             </div>
                 
             <br>
-            <button type="button" onclick="predict()">Predict</button> 
+            <button type="button" onclick="predict()">Predict</button> <!-- Button that runs the JavaScript function predict() when clicked -->
         </form>
+        <!-- Ending Form  -->
 
-        <div id="predictionResult"></div>
-        
+        <div id="predictionResult"></div>  <!-- Area to display Prediction -->
+
     </main>
-    
+    <!-- Ending Main Content Area -->
+
+    <!-- Javascript  -->
     <script>
         function predict() {
             // Collect input values

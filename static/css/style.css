@@ -6,11 +6,13 @@
 
 body {
     min-height: 100vh;
+    max-height: 100vh;
     background: url('../images/leaf_background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+/* Header Section  */
 .header {
     position: fixed;
     top: 0;
@@ -29,7 +31,7 @@ body {
     color: #fff;
     font-weight: 700; /* changes the boldness of text */
 }
-
+ /* Navbar Section  */
 .navbar a{
     position: relative;
     font-size: 18px;
@@ -54,9 +56,25 @@ body {
     width: 100%;
 }
 
+/* Main Content Section  */
 main {
     padding-top: 80px;
     margin: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Form Section  */
+form{
+    align-self: center;
+    background-color: rgb(0, 0, 0);
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    /* border: 2px solid #ffffff; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0.5);
 }
 
 .form-col1, .form-col2 {
