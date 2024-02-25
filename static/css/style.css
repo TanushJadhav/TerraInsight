@@ -85,6 +85,23 @@ form label {
     color: #fff;
 }
 
-#predictionForm input {
+form input {
     margin-bottom: 3px;
+}
+
+/* Button styling   */
+
+form button {
+    padding: 5px 20px;
+    /* border: 1px 1px; */
+    border-radius: 20px;
+    border-color: rgb(83, 107, 63);
+    background-color: rgb(169, 197, 148);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: rgb(198, 148, 102);
+    color: #fff;
 }
