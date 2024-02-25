@@ -42,23 +42,23 @@ def predict():
         prediction = model.predict([[BrdIndx, Area, Round, Bright, Compact, ShpIndx, Mean_G, Mean_R, Mean_NIR,SD_G,SD_R,SD_NIR,LW,GLCM1,Rect,GLCM2,Dens,Assym,NDVI,BordLngth,GLCM3]])
 
         if prediction == 0:
-            pred = 'grass'
+            pred = 'Grass'
         elif prediction == 1:
-            pred = "building"
+            pred = "Building"
         elif prediction == 2:
-            pred = "concrete"
+            pred = "Concrete"
         elif prediction == 3:
-            pred = "tree"
+            pred = "Tree"
         elif prediction == 4:
-            pred = "shadow"
+            pred = "Shadow"
         elif prediction == 5:
-            pred = "pool"
+            pred = "Pool"
         elif prediction == 6:
-            pred = "asphalt"
+            pred = "Asphalt"
         elif prediction == 7:
-            pred = "soil"
+            pred = "Soil"
         else:
-            pred = 'car'
+            pred = 'Car'
 
         print(prediction, ":", pred)
         return jsonify({'prediction': pred}) 
