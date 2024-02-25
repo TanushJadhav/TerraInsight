@@ -76,7 +76,7 @@ form{
     box-shadow: 0 0 10px rgb(152, 204, 150);
 }
 
-.form-col1, .form-col2 {
+.form-col1, .form-col2, .form-col3 {
     float: left;
     margin-right: 20px;
 }
@@ -87,11 +87,26 @@ form label {
 
 form input {
     margin-bottom: 3px;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    text-align: center;
+}
+
+Chrome, Safari, Edge, Opera
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 /* Button styling   */
 
 form button {
+    margin-top: 15px;
     padding: 5px 20px;
     /* border: 1px 1px; */
     border-radius: 20px;
