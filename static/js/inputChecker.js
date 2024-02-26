@@ -1,160 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/style.css">
-    <title>TerraInsight</title>
-</head>
-<body>
 
-    <!--  Start Header Section  -->
-    <header class="header">
-        <a class="logo">TerraInsight</a>
-
-        <!-- Navbar -->
-        <!-- <nav class="navbar">
-            <ul>
-                <a href="#">Home</a>
-                <a href="#">Predict</a>
-                <a href="#">Contact us</a>
-            </ul>
-        </nav> -->
-
-    </header>
-    <!-- Ending Header Section  -->
-
-    <!-- Starting Main Content Area -->
-    <main>
-        <!-- Starting Form  -->
-        <form id="predictionForm">
-            <div class="form-col1">
-                <label for="borderIndex">Border Index:</label><br>
-                <input type="number" step="0.01" id="borderIndex" name="Border Index" required>
-                <span id="borderIndexError" class="error"></span>
-                <br>
-
-                <label for="area">Area:</label><br>
-                <input type="number" step="0.01" id="area" name="Area" required>
-                <span id="areaError" class="error"></span>
-                <br>
-
-                <label for="round">Round:</label><br>
-                <input type="number" step="0.01" id="round" name="Round" required>
-                <span id="roundError" class="error"></span>
-                <br>
-
-                <label for="bright">Bright:</label><br>
-                <input type="number" step="0.01" id="bright" name="Bright" required>
-                <span id="brightError" class="error"></span>
-                <br>
-
-                <label for="compact">Compact:</label><br>
-                <input type="number" step="0.01" id="compact" name="Compact" required>
-                <span id="compactError" class="error"></span>
-                <br>
-
-                <label for="shpIndx">Shape Index:</label><br>
-                <input type="number" step="0.01" id="shpIndx" name="ShpIndx" required>
-                <span id="shpIndxError" class="error"></span>
-                <br>
-
-                <label for="meanG">Mean G:</label><br>
-                <input type="number" step="0.01" id="meanG" name="Mean_G" required>
-                <span id="meanGError" class="error"></span>
-                <br>
-            </div>
-
-            <div class="form-col2">
-                <label for="meanR">Mean R:</label><br>
-                <input type="number" step="0.01" id="meanR" name="Mean_R" required>
-                <span id="meanRError" class="error"></span>
-                <br>
-
-                <label for="meanNIR">Mean NIR:</label><br>
-                <input type="number" step="0.01" id="meanNIR" name="Mean_NIR" required>
-                <span id="meanNIRError" class="error"></span>
-                <br>
-
-                <label for="sdG">SD G:</label><br>
-                <input type="number" step="0.01" id="sdG" name="SD_G" required>
-                <span id="sdGError" class="error"></span>
-                <br>
-
-                <label for="sdR">SD R:</label><br>
-                <input type="number" step="0.01" id="sdR" name="SD_R" required>
-                <span id="sdRError" class="error"></span>
-                <br>
-
-                <label for="sdNIR">SD NIR:</label><br>
-                <input type="number" step="0.01" id="sdNIR" name="SD_NIR" required>
-                <span id="sdNIRError" class="error"></span>
-                <br>
-
-                <label for="lw">LW:</label><br>
-                <input type="number" step="0.01" id="lw" name="LW" required>
-                <span id="lwError" class="error"></span>
-                <br>
-
-                <label for="glcm1">GLCM1:</label><br>
-                <input type="number" step="0.01" id="glcm1" name="GLCM1" required>
-                <span id="glcm1Error" class="error"></span>
-                <br>
-            </div>
-    
-            <div class="form-col3">
-                <label for="rect">Rect:</label><br>
-                <input type="number" step="0.01" id="rect" name="Rect" required>
-                <span id="rectError" class="error"></span>
-                <br>
-
-                <label for="glcm2">GLCM2:</label><br>
-                <input type="number" step="0.01" id="glcm2" name="GLCM2" required>
-                <span id="glcm2Error" class="error"></span>
-                <br>
-
-                <label for="dens">Dens:</label><br>
-                <input type="number" step="0.01" id="dens" name="Dens" required>
-                <span id="densError" class="error"></span>
-                <br>
-
-                <label for="assym">Assym:</label><br>
-                <input type="number" step="0.01" id="assym" name="Assym" required>
-                <span id="assymError" class="error"></span>
-                <br>
-
-                <label for="ndvi">NDVI:</label><br>
-                <input type="number" step="0.01" id="ndvi" name="NDVI" required>
-                <span id="ndviError" class="error"></span>
-                <br>
-
-                <label for="bordLngth">BordLngth:</label><br>
-                <input type="number" step="0.01" id="bordLngth" name="BordLngth" required>
-                <span id="bordLngthError" class="error"></span>
-                <br>
-
-                <label for="glcm3">GLCM3:</label><br>
-                <input type="number" step="0.01" id="glcm3" name="GLCM3" required>
-                <span id="glcm3Error" class="error"></span>
-                <br>
-            </div>
-                
-            <br>
-            
-            <!-- Button that runs the JavaScript function predict() when clicked -->
-            <button type="button" id="predButton" onclick="predict()">Predict</button> 
-
-            <br><br>
-            <!-- Area to display Prediction -->
-            <div id="predictionResult"></div>  
-        </form>
-        <!-- Ending Form  -->
-
-    </main>
-    <!-- Ending Main Content Area -->
-
-    <!-- Javascript  -->
-    <script>
     const borderIndex = document.getElementById('borderIndex')
     const borderIndexError = document.getElementById('borderIndexError')
     const area = document.getElementById('area')
@@ -193,7 +37,7 @@
     const assymError = document.getElementById('assymError')
     const ndvi = document.getElementById('ndvi')
     const ndviError = document.getElementById('ndviError')
-    const bordLngth = document.getElementById('bordLngth')
+    const bordLngth = document.getElementById('bordLngthError')
     const bordLngthError = document.getElementById('bordLngthError')
     const glcm3 = document.getElementById('glcm3')
     const glcm3Error = document.getElementById('glcm3Error')
@@ -344,15 +188,11 @@
             glcm3Error.textContent = '*Required';
         hasError = true;
         } else {
-            glcm3Error.textContent = '';
+            bordLngthError.textContent = '';
         }
+
 
         if (hasError) {
             event.preventDefault();
         }
     });
-    </script>
-    <script src="/static/js/prediction.js"></script>
-
-</body>
-</html>

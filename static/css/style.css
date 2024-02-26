@@ -68,8 +68,8 @@ main {
 form{
     align-self: center;
     background-color: rgb(152, 204, 141, 0.7);
-    max-width: 600px;
-    width: 100%;
+    /* max-width: 600px; */
+    width: auto;
     padding: 20px;
     /* border: 2px solid #ffffff; */
     border-radius: 10px;
@@ -91,6 +91,10 @@ form input {
     border-radius: 5px;
     height: 20px;
     text-align: center;
+}
+
+form span {
+    color: red;
 }
 
 Chrome, Safari, Edge, Opera
