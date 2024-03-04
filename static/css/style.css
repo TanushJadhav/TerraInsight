@@ -145,7 +145,7 @@ form button:hover {
     width: 100px;
     height: 100px;
 }
-
+/* refer to link -- https://uiverse.io/alexruix/weak-lionfish-37  */
 .card {
     background-color: #fff;
     text-align: center;
@@ -153,14 +153,25 @@ form button:hover {
     padding: 5px;
     width: 200px;
     height: 200px;
-    transition: box-shadow .2s ease, transform .2s ease;;
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+
+.card-social {
+
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform .3s ease, opacity .2s ease;
 }
 
 .card:hover{
     background-color: antiquewhite;
     box-shadow: 0 8px 50px #c0bebe33;
     transform: translateY(-5%);
-    
+}
+
+.card:hover .card-social{
+    transform: translateY(50%);
+    opacity: 1;
 }
 
 /*  <--- End about.html --->  */
